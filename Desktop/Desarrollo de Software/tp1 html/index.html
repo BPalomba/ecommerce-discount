@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 - HTML</title>
+</head>
+
+<body>
+    <h1>Encabezado Principal</h1>
+    <nav>
+        <ul>
+            <li><a href="#Estrucutra">Estrucutra</a></li>
+            <li><a href="#dos">Multemedia</a></li>
+            <li><a href="#tres">Formulario</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1 id="Estrucutra">1.Estructura Básica del Documento HTML</h1>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos
+            y un titulo</p>
+    </section>
+
+    <section>
+        <h1 id="dos">2.Encabezados y Propiedades del Texto</h1>
+        <b>Este es un texto en negrita.</b> <br> <br>
+        <i>Este es un texto en cursiva</i> <br> <br>
+        <u>Este es un texto subrayado</u>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+    </section>
+    <section>
+        <h1 id="tres">3.Divisiones y Agrupación de Contenido</h1>
+        <div>
+            <h2>Sección 1</h2>
+            <p>Contenido de la primera sección agrupada en un div.</p>
+        </div>
+        <div>
+            <h2>Sección 2</h2>
+            <p>Contenido de la segunda sección agrupada en un div.</p>
+        </div>
+    </section>
+    <section>
+        <h1>4.Enlaces y Listas</h1>
+        <p>Visita nuestro <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">sitio web</a> para más
+            información.</p>
+
+        <p>Enlaces internos:</p>
+        <ul>
+            <li><a href="#Estrucutra">Estrucutra</a></li>
+            <li><a href="#dos">Multemedia</a></li>
+            <li><a href="#tres">Formulario</a></li>
+        </ul>
+
+        <p>Lista desordenada:</p>
+        <ul>
+            <li>Primer ítem de una lista desordenada</li>
+            <li>Segundo ítem de una lista desordenada</li>
+        </ul>
+
+        <p>Lista ordenada:</p>
+        <ol>
+            <li>Primer ítem de una lista ordenada</li>
+            <li>Segundo ítem de una lista ordenada</li>
+        </ol>
+    </section>
+
+    <section>
+        <h1 id="multimedia">5.Elementos Multimedia</h1>
+        <div>
+            <img width="160" height="160"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF1IwK6-SxM83UpFVY6WtUZxXx-phss_gAUfdKbkTfau6VWVkt"
+                alt="foto de algo">
+            <iframe width="160" height="160" src="https://www.youtube.com/embed/DU9ThX6xZOw"
+                title="Paso a paso 👉 Cómo preparar tu Cafetera Oster® PrimaLatte™ Touch BVSTEM6801M antes de su primer uso"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <audio controls>
+                <source src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Example.ogg" type="audio/ogg">
+                No funciona el audio.
+            </audio>
+        </div>
+    </section>
+    <section>
+        <h1>6.Tablas</h1>
+
+        <table border="1px solid black">
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                </tr>
+                <tr>
+                    <td>Dato 3</td>
+                    <td>Dato 4</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+    <section>
+        <h1 id="formulario">7.Formularios</h1>
+
+        <form action="">
+            <label for="">Nombre:</label>
+            <input type="text">
+
+            <label for="">Email:</label>
+            <input type="email" name="" id="">
+
+            <label for="">Mensaje:</label>
+            <textarea name="" id="" cols="15" rows="2"></textarea>
+
+            <input type="submit">
+        </form>
+    </section>
+</body>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+</html>

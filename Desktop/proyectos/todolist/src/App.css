@@ -1,0 +1,127 @@
+/* Fondo general */
+body {
+  background: linear-gradient(to bottom right, #f6d365, #fda085);
+  /* Fondo cálido con un toque de color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Espaciado y formato general de columnas */
+.card {
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Encabezados de las columnas */
+.card-header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+
+/* Estilos para cada columna */
+.todo-column .card-header {
+  background-color: #ffeb3b;
+  /* Amarillo suave */
+}
+
+.inprogress-column .card-header {
+  background-color: #ff9800;
+  /* Naranja suave */
+}
+
+.done-column .card-header {
+  background-color: #4caf50;
+  /* Verde suave */
+}
+
+/* Fondo de las tarjetas dentro de cada columna */
+.todo-column .card-body {
+  background-color: #fff9c4;
+
+  /* Fondo muy suave para To Do */
+}
+
+.inprogress-column .card-body {
+  background-color: #ffe0b2;
+  /* Fondo suave para In Progress */
+}
+
+.done-column .card-body {
+  background-color: #c8e6c9;
+  /* Fondo suave para Done */
+}
+
+/* Tareas individuales */
+.card-body p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.card .btn {
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+/* Input del creador de tareas */
+form input.form-control {
+  border-radius: 10px;
+  padding: 0.7rem;
+  border: 2px solid #ddd;
+}
+
+/* Botones de acción */
+form .btn-success {
+  background-color: #388e3c;
+  /* Verde oscuro */
+  border: none;
+}
+
+form .btn-success:hover {
+  background-color: #2c6f2b;
+}
+
+.btn-warning {
+  background-color: #ff5722;
+  /* Naranja más oscuro */
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #f4511e;
+}
+
+.btn-danger {
+  background-color: #d32f2f;
+  /* Rojo oscuro */
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c62828;
+}
+
+/* Iconos */
+.bi {
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+/* Efecto de botones al pasar el cursor */
+.card .btn:hover {
+  transform: scale(1.1);
+}
