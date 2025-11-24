@@ -193,8 +193,11 @@ Orders registra el valor definitivo
 
 Cuando se crean reglas/cupones → se envía evento a RabbitMQ para que otros servicios actualicen su caché
 
-<h1>📦 Ejemplos de Uso Completo </h1> <h3>✔ Aplicar cupón válido</h3>
-```json ```
+<h1>📦 Ejemplos de Uso Completo </h1>
+
+<h3>✔ Aplicar cupón válido</h3>
+
+```json
 {
   "userId": "123",
   "cartTotal": 20000,
@@ -203,7 +206,6 @@ Cuando se crean reglas/cupones → se envía evento a RabbitMQ para que otros se
 ```
 
 ```json
-
 {
   "originalTotal": 20000,
   "discountAmount": 2000,
@@ -211,11 +213,9 @@ Cuando se crean reglas/cupones → se envía evento a RabbitMQ para que otros se
 }
 ```
 <h3>✔ Cupón inválido</h3>
-```
-```json
 
+```json
 { "code": "" }
-```
 ```
 
 ```json
@@ -224,15 +224,16 @@ Cuando se crean reglas/cupones → se envía evento a RabbitMQ para que otros se
 <h1> 📡 RabbitMQ </h1>
 Cada vez que se modifica un cupón o regla:
 ```
-makefile
 
+```json
 exchange: discount_exchange
 routingKey: discount.updated
 payload: { rule/coupon actualizado }
 Esto permite sincronizar todos los microservicios sin reiniciar.
-
+```
 <h1>📘 Estructura del Proyecto </h1>
-css
+
+```
 
 src/
  ├─ controller/
@@ -250,6 +251,8 @@ src/
      ├─ Coupon.java
      ├─ DiscountRule.java
      └─ ApplyRequest / ApplyResponse
+
+```
 <h1>🏁 Conclusión </h1>
 Este microservicio abstrae toda la lógica relacionada a cupones y descuentos, permitiendo que otros módulos del sistema consuman la información a través de REST o RabbitMQ. Su funcionalidad es clara, desacoplada y fácilmente integrable en sistemas distribuidos.
 
