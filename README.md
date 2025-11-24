@@ -221,16 +221,20 @@ Cuando se crean reglas/cupones → se envía evento a RabbitMQ para que otros se
 ```json
 
 { "error": "code missing" }
+
+```
+
 <h1> 📡 RabbitMQ </h1>
 Cada vez que se modifica un cupón o regla:
-```
 
 ```json
 exchange: discount_exchange
 routingKey: discount.updated
 payload: { rule/coupon actualizado }
-Esto permite sincronizar todos los microservicios sin reiniciar.
 ```
+
+Esto permite sincronizar todos los microservicios sin reiniciar.
+
 <h1>📘 Estructura del Proyecto </h1>
 
 ```
